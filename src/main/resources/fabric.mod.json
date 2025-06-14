@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "fancyname",
+	"version": "${version}",
+	"name": "FancyName",
+	"description": "mod that makes names cool lol",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fancyname-1.20.1"
+	},
+	"license": "MIT",
+	"icon": "assets/fancyname/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.lilboiboi.fancyname.FancyName"
+		],
+		"fabric-datagen": [
+			"com.lilboiboi.fancyname.FancyNameDataGenerator"
+		],
+		"client": [
+			"com.lilboiboi.fancyname.FancyNameClient"
+		]
+	},
+	"mixins": [
+		"fancyname.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
